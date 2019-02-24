@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLiteDatabase.Login_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#06a5fa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="知乎月报Plus"
+            android:textSize="37sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+            <EditText
+                android:id="@+id/UserCount"
+                android:layout_width="317dp"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:inputType="number"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:hint="账号"/>
+
+        <EditText
+            android:id="@+id/UserPassword"
+            android:layout_width="317dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:layout_weight="1"
+            android:hint="密码"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="217dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha="0.57"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:text="登录"/>
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="217dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:alpha="0.57"
+            android:text="注册"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

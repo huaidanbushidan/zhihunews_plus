@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLiteDatabase.Like_Activity">
+    <android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/SwipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!--android:layout_weight="10">-->
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收藏的栏目"
+        android:textSize="27dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_column"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收藏的新闻"
+        android:textSize="27dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+</ScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

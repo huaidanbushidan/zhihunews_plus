@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginBottom="10dp"
+        android:background="#b3f0fd">
+
+        <ImageView
+            android:id="@+id/NewsPicture"
+            android:layout_width="0dp"
+            android:layout_margin="7dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/NewsName"
+            android:layout_width="0dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:textSize="17sp" />
+        <ImageButton
+            android:id="@+id/news_like"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginVertical="27dp"
+            android:layout_marginRight="47dp"
+            android:layout_marginLeft="27dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/first"
+            android:layout_gravity="center"/>
+
+</LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

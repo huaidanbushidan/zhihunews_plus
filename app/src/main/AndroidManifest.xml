@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a32936.zhihunews">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".News.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SQLiteDatabase.Login_Activity" />
+        <activity android:name=".SQLiteDatabase.Register_Activity" />
+        <activity android:name=".SQLiteDatabase.Edit_informationActivity"
+                   android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SQLiteDatabase.Edit_PasswordActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.a32936.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".News.News_Activity" />
+        <activity android:name=".News.Column_news_detailsActivity" />
+        <activity android:name=".News.short_comments_Activity" />
+        <activity android:name=".News.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bean.About"></activity>
+    </application>
+
+</manifest>
