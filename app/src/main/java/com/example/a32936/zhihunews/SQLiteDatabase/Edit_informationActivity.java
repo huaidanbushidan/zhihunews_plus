@@ -51,7 +51,7 @@ public class Edit_informationActivity extends AppCompatActivity
     public static final int CHOOSE_PHOTO = 2;
     private ImageView picture;
     private Uri imageUri;
-    public String Username;
+//    public String Username;
     private MyDatabaseHelper dbHelper;
     private TextView textViewUserCount;
     private Button buttonmakesure;
