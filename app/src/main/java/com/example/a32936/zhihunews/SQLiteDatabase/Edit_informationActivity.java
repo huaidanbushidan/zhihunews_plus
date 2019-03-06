@@ -160,7 +160,6 @@ public class Edit_informationActivity extends AppCompatActivity
 
 
         //头像框从数据库获取用户头像数据
-//        final SQLiteDatabase db = dbHelper.getWritableDatabase();
         Cursor cursor = db.query("User",new String[]{"UserCount","Head_image"},"UserCount = ?",new String[]{Login_Activity.signer},null,null,"id asc");
         if (cursor.moveToFirst()){
             do{
